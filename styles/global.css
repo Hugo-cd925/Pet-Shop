@@ -1,0 +1,186 @@
+/*
+
+Fonts used 
+
+font-family : "Anton", cursive;
+font-family: "Open Sans", sans-serif
+
+Colors used
+Text color: #333
+Dark blue: #345995
+Light blue: #4392F1
+Red: #D7263D
+Yellow: #EAC435
+Orange: F46036s
+
+Make these into variables
+
+*/
+
+:root {
+    --light-blue: #4392F1;
+    --dark-blue: #345995;
+    --orange: #F46036;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    background-color: #fff;
+    color: #333;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: "Anton", cursive;
+    font-weight: normal;
+}
+
+h1 {
+    font-style: 110px;
+}
+
+h2 {
+    font-style: 30px;
+}
+
+.spacer .v20 {
+    height: 20px;
+}
+
+.spacer .v40 {
+    height: 40px;
+}
+
+.spacer .v80 {
+    height: 80px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* This will apply to all ids grouped */
+#promo,
+#subscribe,
+#footer {
+    text-align: center;
+    color: #fff;
+    min-width: 1000px;
+}
+
+#promo {
+    background-color: var(--orange);
+}
+
+/* Select all div tags within promo */
+#promo>div {
+    padding: 15px;
+}
+
+.wrap {
+    margin: 0 auto;
+    padding: 0;
+    width: 1000px;
+}
+
+#topMenu {
+    height: 60px;
+}
+
+#topLinks {
+    float: right;
+    padding-top: 20px;
+}
+
+/* Selecting the List element in both ids */
+#topLinks ul,
+#footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: red;
+
+}
+
+#topLinks li {
+    float: left;
+}
+
+#topLinks li a {
+    color: #333;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    -webkit-transition: all 250ms ease out;
+    -ms-transition: all 250ms ease out;
+    transition: all 250ms ease-out;
+}
+
+#topLinks li a:hover {
+    color: var(--light-blue);
+    -webkit-transition: all 250ms ease-out;
+    -ms-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+    text-decoration: underline;
+}
+
+#topMenu .logo {
+    float: left;
+    padding-top: 13px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+#topMenu .logo:hover {
+    color: var(--light-blue);
+}
+
+.logo {
+    font-family: "Anton", cursive;
+}
+
+#banner {
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    text-align: center;
+    padding-top: 300px;
+    color: #333;
+}
+
+#banner .logo {
+    margin-top: 20px;
+}
+
+#banner #action {
+    font-weight: bold;
+    width: 200px;
+    margin: 20px auto 0 auto;
+}
+
+#banner #action a {
+    -webkit-transition: all 250ms ease-out;
+    -ms-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: var(--light-blue);
+}
+
+#banner #action a:hover {
+    -webkit-transition:all 250ms ease-out;
+    -ms-transition:all 250ms ease-out;
+    transition: all 250ms ease-out;
+    background-color: var(--orange);
+    padding: 20px 40px;
+}
